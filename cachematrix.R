@@ -1,7 +1,10 @@
-## Put comments here that give an overall description of what your
-## functions do
+## the two functions allow us to solve a matrix and store the solution for future use
+## when called the first time, cacheSolve will solve the matrix
+## calling cacheSolve later will retrieve previously stored solution, eliminating the need to re-compute
 
-## Write a short comment describing this function
+## makeCacheMatrix returns a list of 4 objects, set, get, setinv and getinv
+## set is used to store matrix value; get returns the matrix
+## setinv is used to store inverse matrix; getinv returns the inverse matrix (or null)
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
